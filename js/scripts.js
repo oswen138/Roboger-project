@@ -1,4 +1,4 @@
-// Back End Logic
+// Business Logic
 function userArray (numberStop) { 
   var numbers = [];
   for (let index = 0; index <= numberStop; index += 1) {
@@ -21,7 +21,7 @@ function userArray (numberStop) {
 
 // User Interface Logic
 $(document).ready(function() {
-    $("form#neighbor").submit(function(event) {
+    $("form#formOne").submit(function(event) {
     event.preventDefault();
     var numberStop = ($("input#number").val()); 
     var result = userArray(numberStop);
@@ -31,3 +31,23 @@ $(document).ready(function() {
     });
     
 });
+
+<! -- This is pseudo-code testing -->
+
+Describe: number()
+Test: start at 0, numbers run upwards in increments of 1
+Code: i=0; i < number; i++
+Expect(num(4)).toEqual(0,1,2,3,4);
+
+function number(4) {
+  return 0,1,2,3,4
+}
+
+Test #2
+
+Test: numbers that contain a 1
+Expect(number(31)).toEqual("Beep!");
+
+function number(31) {
+  if (number.includes('1')
+}
