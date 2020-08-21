@@ -1,20 +1,42 @@
   
   $(document).ready(function() {
-      $("#formOne").submit(function(event) {
+      $("form#formOne").submit(function(event) {
         event.preventDefault();
-        const inputOne = parseInt($("#value").val());
-        let value = [];
-        for (let i=0; i <=inputOne; i++) {
-          value.push(i.toString());
-        };
+        $("#output").show();
+      });
+      $('#formOne').hide();
+  });
+});
 
-        console.log("moo!");
-      }
-      return value;
+});
 
+const beep = "beep!";
+const boop = "boop!";
+const roger = "Won't you be my neighbor";
+let value = [];
+  
+    const inputOne = parseInt($("#value").val());
+
+    let value = [];
+    for (let i=0; i <=inputOne; i++) {
+      value.push(i.toString());
+    });
+
+    console.log("moo!");
   }
+  return value;
 
+}}}
 
+function inputOne(value, result) {
+  return value.map(function(element) 
+  }
+}
+
+  const inputOne = value.map(function(input) {
+    return 
+  }
+function inout
 
 // // back-end logic
 // const beep = "beep!"
