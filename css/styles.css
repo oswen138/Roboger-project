@@ -39,10 +39,6 @@ body {
 .btn {
   float: center-left;
 }
-.button {
-  background-color: blueviolet;
-  padding--box: 16px 32px;
-}
 #outputNumbers {
   text-align: center;
   font-weight: bold;
