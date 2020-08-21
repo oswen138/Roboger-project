@@ -1,9 +1,12 @@
 // User Interface Logic
 $(document).ready(function() {
-  $("form#formOne").submit(function(event) {
+  $("form#form1").submit(function(event) {
   event.preventDefault();
-  const number = ($("input#number").val()); 
-  const output = output(number);
+  const form1 = ($("input#form1").val()); 
+  const beep = beep;
+  const boop = boop!
+  let output = [];
+  for (let i= word.length)
     $("#ting").show();
   });
   
@@ -12,24 +15,24 @@ $(document).ready(function() {
 
 
 
-// Business Logic
-function integerToSent(num) { 
-  let result = [];
-  for (let i = 0; index <= number; i += 1) {
-  }
-    if (number.includes(1)) {
-      number.push("Beep!");
-    } else if (words.includes(2)) {
-      numbers.push("Boop");
-    } else if (words.includes(3)) {
-      numbers.push("Won't you be my neighbor?");
-    } else {
-      numbers.push(moo);
-    }
-    console.log();
-  }
-  return numbers;
-}
+// // Business Logic
+// function integerToSent(num) { 
+//   let result = [];
+//   for (let i = 0; index <= number; i += 1) {
+//   }
+//     if (number.includes(1)) {
+//       number.push("Beep!");
+//     } else if (words.includes(2)) {
+//       numbers.push("Boop");
+//     } else if (words.includes(3)) {
+//       numbers.push("Won't you be my neighbor?");
+//     } else {
+//       numbers.push(moo);
+//     }
+//     console.log();
+//   }
+//   return numbers;
+// }
 
 
 // <! -- This is pseudo-code testing -->

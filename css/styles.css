@@ -36,11 +36,8 @@ body {
   float: center;
   text-align: center;
 }
-.btn {
-  float: center-left;
-}
-#outputNumbers {
-  text-align: center;
-  font-weight: bold;
-  border: 3px black;
+
+p2 {
+  display: none;
+
 }
