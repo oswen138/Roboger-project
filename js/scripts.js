@@ -3,10 +3,8 @@ $(document).ready(function() {
   $("form#formOne").submit(function(event) {
   event.preventDefault();
   const number = ($("input#number").val()); 
-  const result = userArray(numberStop);
-    $("#outputPhrase").show();
-    $("#outputNumbers").text(result);
-   
+  const output = output(number);
+    $("#ting").show();
   });
   
 });
