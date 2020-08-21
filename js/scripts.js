@@ -1,37 +1,38 @@
-// Business Logic
-function userArray (numberStop) { 
-  var numbers = [];
-  for (let index = 0; index <= numberStop; index += 1) {
-    var words = index.toString();
+// User Interface Logic
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+  event.preventDefault();
+  const number = ($("input#number").val()); 
+  const result = userArray(numberStop);
+    $("#outputPhrase").show();
+    $("#outputNumbers").text(result);
+   
+  });
+  
+});
 
-    if (words.includes(3)) {
-      numbers.push("Won't you be my neighbor?");
+
+
+
+// Business Logic
+function integerToSent(num) { 
+  let result = [];
+  for (let i = 0; index <= number; i += 1) {
+  }
+    if (number.includes(1)) {
+      number.push("Beep!");
     } else if (words.includes(2)) {
       numbers.push("Boop");
-    } else if (words.includes(1)) {
-      numbers.push("Beep");
+    } else if (words.includes(3)) {
+      numbers.push("Won't you be my neighbor?");
     } else {
-      numbers.push(words);
+      numbers.push(moo);
     }
-    console.log("This is the index for every loop: " +index);
+    console.log();
   }
   return numbers;
 }
 
-is this working event,,,
-
-// User Interface Logic
-$(document).ready(function() {
-    $("form#formOne").submit(function(event) {
-    event.preventDefault();
-    const number = ($("input#number").val()); 
-    const result = userArray(numberStop);
-      $("#outputPhrase").show();
-      $("#outputNumbers").text(result);
-     
-    });
-    
-});
 
 // <! -- This is pseudo-code testing -->
 
