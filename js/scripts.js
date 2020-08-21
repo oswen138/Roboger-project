@@ -1,39 +1,91 @@
+// back-end logic
+const beep = "beep!"
+const boop = "boop!"
+const neighbor = "Won't you be my neighbor?"
 
-// User Interface Logic
-$(document).ready(function() {
-  $("#formOne").submit(function(event) {
-  event.preventDefault();
-  const valueInput = $("input#value").val();
-  const output = formOne(valueInput);
-    $(#output").show();
-    $(#img1).show();
-    
+
+var roboger = function(input) {
+  let numbers = [];
+  for (let i = 0; i <= input; i++) {
+    numbers.push(i.toString());
+  };
+  
+  var robogers = numbers.map(function(number) {
+    if (number.includes("3")) {
+      return number = neighbor;
+    } else if (number.includes("2")) {
+      return number = boop;
+    } else if (number.includes("1")) {
+      return number = beep;
+    } else {
+      return number;
+    };
   });
+  return robogers;
+};
+
+
+// front-end logic
+
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
+    var input = parseInt($("input#input").val());
+    var result = roboger(input);
+    $("#results").text(result);
+    $(".output").show();
+    $("img").click(function() {
+      $("#results").text(result.reverse());
+    });
+  });
+  
 });
 
 
 
 
-/Business Logic
+// //Business Logic
 
-function words(value) {
-  let output = [];
-  for (let i = 0; i <= number; i++ ) {
-    valueInput.push(i.toString());
+// function words(value) {
+//   let value = [];
+//   for (let i = 0; i <= number; i++ ) {
+//     valueInput.push(i.toString());
 
-  if (valueInput.includes("1")) {
-    value.push("Beep!");
-    $("#img1").show();
-  } else if (valueInput.includes("2")) {
-    value.push("Boop!");
-  } else if (valueInput.includes("3")) {
-    value.push("Won't you be my neighbor?");
-    $("#img1").show();
-  } else { 
-    value.push("Moo");
-  }
-}
-return value;
+//   if (valueInput.includes("1")) {
+//     value.push("Beep!");
+//     $("#img1").show();
+//   } else if (valueInput.includes("2")) {
+//     value.push("Boop!");
+//   } else if (valueInput.includes("3")) {
+//     value.push("Won't you be my neighbor?");
+//     $("#img1").show();
+//   } else { 
+//     value.push("Moo");
+//   }
+// }
+// return value;
+
+
+// // User Interface Logic
+// $(document).ready(function() {
+//   $("#formOne").submit(function(event) {
+//   event.preventDefault();
+//   const valueInput = $("input#value").val();
+//   const output = formOne(valueInput);
+    
+//   });
+// });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,4 +145,4 @@ return value;
 //     return "Moo!"
 //   }
 // }
-}
+
