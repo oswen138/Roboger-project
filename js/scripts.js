@@ -2,130 +2,72 @@
   $(document).ready(function() {
       $("form#formOne").submit(function(event) {
         event.preventDefault();
-        $("#output").show();
+        $("#img1").show();
       });
-      $('#formOne').hide();
-  });
-});
 
-});
-
-const beep = "beep!";
-const boop = "boop!";
-const roger = "Won't you be my neighbor";
-let value = [];
+  const beep = "beep!";
+  const boop = "boop!";
+  const roger = "Won't you be my neighbor";
+  let value = [];
+  for (let i=0; i <=inputOne; i++) {
+    value.push(i.toString());
   
-    const inputOne = parseInt($("#value").val());
-
-    let value = [];
-    for (let i=0; i <=inputOne; i++) {
-      value.push(i.toString());
-    });
-
-    console.log("moo!");
-  }
-  return value;
-
-}}}
-
-function inputOne(value, result) {
-  return value.map(function(element) 
+  const inputOne = value.map(function(input) {
+  if (valueInput.includes("1")) {
+      value.push("Beep!");
+      $("#img1").show();
+    } else if (valueInput.includes("2")) {
+      value.push("Boop!");
+    } else if (valueInput.includes("3")) {
+      value.push("Won't you be my neighbor?");
+      $("#img1").show();
+    } else { 
+      value.push("Moo");
+     }
+   });
+   return value;
   }
 }
-
-  const inputOne = value.map(function(input) {
-    return 
-  }
-function inout
-
-// // back-end logic
-// const beep = "beep!"
-// const boop = "boop!"
-// const neighbor = "Won't you be my neighbor?"
+  )
 
 
-// var roboger = function(input) {
-//   let numbers = [];
-//   for (let i = 0; i <= input; i++) {
-//     numbers.push(i.toString());
-//   };
+
+
+
+
+
+
+
+//  // Trying out functions
+
+// const finalValue = value.join("");
   
-//   var robogers = numbers.map(function(number) {
-//     if (number.includes("3")) {
-//       return number = neighbor;
-//     } else if (number.includes("2")) {
-//       return number = boop;
-//     } else if (number.includes("1")) {
-//       return number = beep;
-//     } else {
-//       return number;
-//     };
-//   });
-//   return robogers;
-// };
-// 2
+//     const inputOne = parseInt($("#value").val());
 
-// // front-end logic
-
-// $(document).ready(function() {
-//   $("form#formOne").submit(function(event) {
-//     event.preventDefault();
-//     var input = parseInt($("input#input").val());
-//     var result = roboger(input);
-//     $("#results").text(result);
-//     $(".output").show();
-//     $("img").click(function() {
-//       $("#results").text(result.reverse());
+//     let value = [];
+//     for (let i=0; i <=inputOne; i++) {
+//       value.push(i.toString());
 //     });
-//   });
-  
-// });
 
+//     console.log("moo!");
+//   }
+//   return value;
 
+// }}}
 
-
-// //Business Logic
-
-// function words(value) {
-//   let value = [];
-//   for (let i = 0; i <= number; i++ ) {
-//     valueInput.push(i.toString());
-
-//   if (valueInput.includes("1")) {
-//     value.push("Beep!");
-//     $("#img1").show();
-//   } else if (valueInput.includes("2")) {
-//     value.push("Boop!");
-//   } else if (valueInput.includes("3")) {
-//     value.push("Won't you be my neighbor?");
-//     $("#img1").show();
-//   } else { 
-//     value.push("Moo");
+// function inputOne(value, result) {
+//   return value.map(function(element) 
 //   }
 // }
-// return value;
 
 
-// // User Interface Logic
-// $(document).ready(function() {
-//   $("#formOne").submit(function(event) {
-//   event.preventDefault();
-//   const valueInput = $("input#value").val();
-//   const output = formOne(valueInput);
-    
-//   });
-// });
+// const value  = Number
+// const finalString = str.replace([1]*%, "beep");
 
-
-
-
-
-
-
-
-
-
-
+//   const inputOne = value.map(function(input) {
+//     return 
+//   }
+// function inout
 
 
 
@@ -184,5 +126,3 @@ function inout
 //   } else {
 //     return "Moo!"
 //   }
-
-      )
