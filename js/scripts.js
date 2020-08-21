@@ -1,38 +1,42 @@
+
 // User Interface Logic
 $(document).ready(function() {
-  $("form#form1").submit(function(event) {
+  $("#formOne").submit(function(event) {
   event.preventDefault();
-  const form1 = ($("input#form1").val()); 
-  const beep = beep;
-  const boop = boop!
-  let output = [];
-  for (let i= word.length)
-    $("#ting").show();
+  const valueInput = $("input#value").val();
+  const output = formOne(valueInput);
+    $(#output").show();
+    $(#img1).show();
+    
   });
-  
 });
 
 
 
 
-// // Business Logic
-// function integerToSent(num) { 
-//   let result = [];
-//   for (let i = 0; index <= number; i += 1) {
-//   }
-//     if (number.includes(1)) {
-//       number.push("Beep!");
-//     } else if (words.includes(2)) {
-//       numbers.push("Boop");
-//     } else if (words.includes(3)) {
-//       numbers.push("Won't you be my neighbor?");
-//     } else {
-//       numbers.push(moo);
-//     }
-//     console.log();
-//   }
-//   return numbers;
-// }
+/Business Logic
+
+function words(value) {
+  let output = [];
+  for (let i = 0; i <= number; i++ ) {
+    valueInput.push(i.toString());
+
+  if (valueInput.includes("1")) {
+    value.push("Beep!");
+    $("#img1").show();
+  } else if (valueInput.includes("2")) {
+    value.push("Boop!");
+  } else if (valueInput.includes("3")) {
+    value.push("Won't you be my neighbor?");
+    $("#img1").show();
+  } else { 
+    value.push("Moo");
+  }
+}
+return value;
+
+
+
 
 
 // <! -- This is pseudo-code testing -->
@@ -89,4 +93,4 @@ $(document).ready(function() {
 //     return "Moo!"
 //   }
 // }
-
+}
