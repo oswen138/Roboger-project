@@ -15,6 +15,10 @@ A web application created with HTML, Javascript, and CSS that takes a number fro
 | **Numbers that contain a 1** |  21 | Beep! |
 | **Numbers that contain a 2**| 32 | Boop! |
 | **Numbers that contain a 3**| 13 | Won't you be my neighbor? |
+| **Returns a range of numbers from 0, replaces numbers with 1 for "beep!"**| 5 | 0,beep!,2,3,4,5 |
+| **Returns a range of numbers from 0,  replaces numbers with 2 for "boop!"**| 6 | 0,beep!,boop!,3,4,5,6 |
+| **Returns a range of numbers from 0,  replaces numbers with 3 for "Won't you be my neighbor?"**| 5 | 0,beep!,boop!,"Won't you be my neighbor?",4,5 |
+| **Program favors second exception**| 21 | boop!,"Won't you be my neighbor?"|
 
 ## Setup/Installation Requirements
 

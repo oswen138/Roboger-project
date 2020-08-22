@@ -3,24 +3,23 @@
       $("form#formOne").submit(function(event) {
         event.preventDefault();
         $("#img1").show();
-      });
 
-  const beep = "beep!";
-  const boop = "boop!";
-  const roger = "Won't you be my neighbor";
+      const value = number
+
+        const value  = Number
+        // const finalString = str.replace([1]*%, "beep");
+
+  const inputOne = parseInt($("#value").val());
   let value = [];
   for (let i=0; i <=inputOne; i++) {
     value.push(i.toString());
-  
-  const inputOne = value.map(function(input) {
-  if (valueInput.includes("1")) {
+   
+  if (inputOne.includes("1")) {
       value.push("Beep!");
-      $("#img1").show();
-    } else if (valueInput.includes("2")) {
+    } else if (inputOne.includes("2")) {
       value.push("Boop!");
-    } else if (valueInput.includes("3")) {
+    } else if (inputOne.includes("3")) {
       value.push("Won't you be my neighbor?");
-      $("#img1").show();
     } else { 
       value.push("Moo");
      }
@@ -29,8 +28,6 @@
   }
 }
   )
-
-
 
 
 
