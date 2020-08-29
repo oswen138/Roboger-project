@@ -1,30 +1,31 @@
 //Business Logic
 
 function speakArray(input) {
-  let words = [];
+  const num = [];
   for (let i=0; i <= input; i++) {
+    num.push(i.toString());
     if (i.toString().match("1")) {
-      words.push("Beep!");
+      num.push("Beep!");
     }
     else if (i.toString().match("2")) {
-      words.push("Boop!");
+      num.push("Boop!");
     }
     else if (i.toString().match("3")) {
-      words.push("Won't you be my neighbor?");
+      num.push("Won't you be my neighbor?");
     } else {
-      words.push(i);
+      num.push(i);
     }
   }
   return words;
-}
+};
 
 //Front end Logic
 
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const inputtedNumber = $("#number").val();
-    let result = neighbor(inputtedNumber);
+    const input = $("#number").val();
+    let result = speakArray(input).toString;
     $("#output").text(result);
     $("#output").show() 
   });
