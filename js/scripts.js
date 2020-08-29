@@ -1,41 +1,47 @@
-//Business Logic
 
-function result(input){
-  let speak = [];
-   for (let i=0; i <= input; i++) {
-       speak.push(i.toString());
-       if (speak[i].includes("1")) {
-            speak[i] = ("Beep!");
-            } else if (i.toString().includes("2")) {
-              speak.push("Boop!");
-            } else if (i.toString().includes("3")) {
-              speak.push("Won't you be my neighbor?");
-            } else { 
-              speak.push("Moo");
-            }
-          }l
-          return speak;
-        }
+  
+//business logic
+function(speakRoboger) {
+  alert('I speak' + word + '!');
 
+}
 
-// UI Logic
- $(document).ready(function() {
-  $("form#formOne").submit(function(event) {
-    event.preventDefault();
-
-    let input = parseInt($("#value").val());
-    let speak = speak(input).toString();
-    $("#result").text(roboArray);
-    $("#result").show();
-    $("#formOne").show();
-  });
+const words = ['Boop!', 'Beep!', 'Won't you be my neighbor?'];
+words.forEach(function(word) {
+  alert('I speak' + word + '!');
 });
+
+
+
+let thingsILike = "I like...";
+const arrayOfThingsILike = ["bubble baths", "kittens", "good books", "clean code"];
+arrayOfThingsILike.forEach(function(thing) {
+  thingsILike = thingsILike.concat(" " + thing + "!");
+});
+thingsILike;
+
+
+
+
+
+
+
+
+  let wordArray = [""];
+   for (let i=0; i <= input; i++) {
+     if (i.toString().includes("3")) {
+       roboArray.push("Won't you be my neighbor?");
+     } else if (i.toString().includes("2")) {
+       roboArray.push("Boop!");
+     } else if (i.toString().includes("1")) {
+       roboArray.push("Beep!");
+     } else {
+         roboArray.push(i);
+     }
+   }
+   return roboArray;
+ }
  
-
-
-
-
-
  //UI logic
  $(document).ready(function() {
    $("#formOne").submit(function(event) {
@@ -49,65 +55,46 @@ function result(input){
    });
  });
 
+// //Business Logic
+
+// function resultArray(input) {
+//   let numbers = [];
+//    for (let i=0; i <= input; i += 1) {
+//      speak = index.toString();
+
+//       if (speak.includes(1)) {
+//         numbers.push(Beep!);
+//       } else if (speak.includes(2)) {
+//         numbers.push(Boop!);
+//       } else if (speak.includes(3)) {
+//         numbers.push(Won't you be my neighbor?);
+//       } else { 
+//         numbers.push(Moo);
+//       }
+//       return numbers;
+//     }
 
 
-
-
-
- //Bussiness Logic
- function neighbor(hood) {
-  const number = [];
-  for (let i = 0; i <= hood; i++) {
-    number.push(i.toString());
-    if ((number[i]).match("3")) {
-      number[i] = ("Won't you be my neigbor?.");
-    } else if ((number[i]).match("2")) {
-      number[i] = ("Boop");
-    } else if (number[i].match("1")) {
-      number[i] = ("Beep");
-    } else {
-      number[i];
-  } 
-}
-return number;
-};
-
-  // Business logic
-$(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    event.preventDefault();
-    const inputtedNumber = $("#number").val();
-    let result = neighbor(inputtedNumber);
-    $("#output").text(result);
-    $("#output").show() 
-  });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  // Business Logic
-//  
-
-//     // UI Logic
+// // UI Logic
 //  $(document).ready(function() {
-//   $("form#formOne").submit(function(event) {
+//    $("form#formZing").submit(function(event) {
 //     event.preventDefault();
-//     const value = parseInt($("input#value").val());
-//     $(".result").show();
+//     input =  ($("input#value").val()); 
+//     result = resultArray(input);
+//     $("#outputOne").text(result);
+   
+//   });
+  
+// })
+
+
+
+
+const words = beep boop meow
+
+words.join();
+
+const languages = ['HTML', 'CSS', 'JavaScript'];
+languages.forEach(function(language) {
+  alert('I love ' + language + '!');
+});
