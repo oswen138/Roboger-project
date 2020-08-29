@@ -1,22 +1,22 @@
 //Business Logic
 
 function speakArray(input) {
-  const num = [];
+  const inputNum = [];
   for (let i=0; i <= input; i++) {
-    num.push(i.toString());
+    inputNum.push(i.toString());
     if (i.toString().match("1")) {
-      num.push("Beep!");
+     alert("Beep!");
     }
     else if (i.toString().match("2")) {
-      num.push("Boop!");
+      inputNum.push("Boop!");
     }
     else if (i.toString().match("3")) {
-      num.push("Won't you be my neighbor?");
+      inputNum.push("Won't you be my neighbor?");
     } else {
-      num.push(i);
+      inputNum.push(i);
     }
   }
-  return words;
+  return inputNum;
 };
 
 //Front end Logic
@@ -24,10 +24,13 @@ function speakArray(input) {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const input = $("#number").val();
-    let result = speakArray(input).toString;
+    const inputNum  = parseInt($("#input").val());
+    let result = speakArray(inputNum).toString;
     $("#output").text(result);
     $("#output").show() 
+
   });
 });
     
+
+
