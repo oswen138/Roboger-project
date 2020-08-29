@@ -1,33 +1,87 @@
-  
-  $(document).ready(function() {
-      $("form#formOne").submit(function(event) {
-        event.preventDefault();
-        $("#img1").show();
+//Business Logic
 
-      const value = number
+function result(input){
+  let speak = [];
+   for (let i=0; i <= input; i++) {
+       speak.push(i.toString());
+       if (speak[i].includes("1")) {
+            speak[i] = ("Beep!");
+            } else if (i.toString().includes("2")) {
+              speak.push("Boop!");
+            } else if (i.toString().includes("3")) {
+              speak.push("Won't you be my neighbor?");
+            } else { 
+              speak.push("Moo");
+            }
+          }l
+          return speak;
+        }
 
-        const value  = Number
-        // const finalString = str.replace([1]*%, "beep");
 
-  const inputOne = parseInt($("#value").val());
-  let value = [];
-  for (let i=0; i <=inputOne; i++) {
-    value.push(i.toString());
-   
-  if (inputOne.includes("1")) {
-      value.push("Beep!");
-    } else if (inputOne.includes("2")) {
-      value.push("Boop!");
-    } else if (inputOne.includes("3")) {
-      value.push("Won't you be my neighbor?");
-    } else { 
-      value.push("Moo");
-     }
+// UI Logic
+ $(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
+
+    let input = parseInt($("#value").val());
+    let speak = speak(input).toString();
+    $("#result").text(roboArray);
+    $("#result").show();
+    $("#formOne").show();
+  });
+});
+ 
+
+
+
+
+
+ //UI logic
+ $(document).ready(function() {
+   $("#formOne").submit(function(event) {
+     event.preventDefault();
+ 
+     let input = parseInt($("#number").val());
+     let roboArray = talkRobo(input).toString();
+     $("#result").text(roboArray);
+     $("#result").show();
+     $("#formOne").show();
    });
-   return value;
-  }
+ });
+
+
+
+
+
+
+ //Bussiness Logic
+ function neighbor(hood) {
+  const number = [];
+  for (let i = 0; i <= hood; i++) {
+    number.push(i.toString());
+    if ((number[i]).match("3")) {
+      number[i] = ("Won't you be my neigbor?.");
+    } else if ((number[i]).match("2")) {
+      number[i] = ("Boop");
+    } else if (number[i].match("1")) {
+      number[i] = ("Beep");
+    } else {
+      number[i];
+  } 
 }
-  )
+return number;
+};
+
+  // Business logic
+$(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    event.preventDefault();
+    const inputtedNumber = $("#number").val();
+    let result = neighbor(inputtedNumber);
+    $("#output").text(result);
+    $("#output").show() 
+  });
+});
 
 
 
@@ -35,91 +89,25 @@
 
 
 
-//  // Trying out functions
-
-// const finalValue = value.join("");
-  
-//     const inputOne = parseInt($("#value").val());
-
-//     let value = [];
-//     for (let i=0; i <=inputOne; i++) {
-//       value.push(i.toString());
-//     });
-
-//     console.log("moo!");
-//   }
-//   return value;
-
-// }}}
-
-// function inputOne(value, result) {
-//   return value.map(function(element) 
-//   }
-// }
-
-
-// const value  = Number
-// const finalString = str.replace([1]*%, "beep");
-
-//   const inputOne = value.map(function(input) {
-//     return 
-//   }
-// function inout
 
 
 
 
 
-// <! -- This is pseudo-code testing -->
 
-// Describe: number()
-// Test: start at 0, numbers run upwards in increments of 1
-// Code: i=0; i < number; i++
-// Expect(num(4)).toEqual(0,1,2,3,4);
 
-// function number(4) {
-//   return 0,1,2,3,4
-// }
 
-// Test #2
 
-// Test: "numbers that contain 1"
-// Expect(number(31)).toEqual("Beep!");
 
-// function number(21) {
-//   if (number.includes('1') {
-//     return beep!;
-//   } else {
-//     return Moo; 
-//   }
-//   }
-// }
 
-// Test #3
 
-// Test: "numbers that contain 2"
-// Expect(number(32)).toEqual("Boop!");
 
-// function number(32) {
-//   if (number.includes('2') {
-//     return "Boop";
-//   } else if (number.includes('1') {
-//     return "Beep";
-//   }
-// }
+//  // Business Logic
+//  
 
-// Test#4
-
-// Test: "numbers that contain 3"
-// Expect(number(13)).toEqual("Won't you be my neighbor?");
-
-// function number(13) {
-//   if (number.includes('3') {
-//     return "Won't you be my neighbor?";
-//   } else if (number.includes('1') {
-//     return "Beep";
-//   } else if (number.includes('2') {
-//     return "Boop";
-//   } else {
-//     return "Moo!"
-//   }
+//     // UI Logic
+//  $(document).ready(function() {
+//   $("form#formOne").submit(function(event) {
+//     event.preventDefault();
+//     const value = parseInt($("input#value").val());
+//     $(".result").show();
