@@ -37,3 +37,6 @@ body {
   text-align: center;
 }
 
+#words {
+  display: none;
+}
