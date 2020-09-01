@@ -40,3 +40,6 @@ body {
 #words {
   display: none;
 }
+.result {
+  display: none;
+}

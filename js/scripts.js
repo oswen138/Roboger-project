@@ -3,11 +3,11 @@
 function speakArray(input) {
   const inputNum = [];
   for (let i=0; i <= input; i++) {
-    inputNum.push(i.toString());
-    if (i.toString().match("1")) {
-     alert("Beep!");
+  
+    if (i.toString().includes("1")) {
+      inputNum.push("Beep!");
     }
-    else if (i.toString().match("2")) {
+    else if (i.toString().includes("2")) {
       inputNum.push("Boop!");
     }
     else if (i.toString().match("3")) {
@@ -26,8 +26,8 @@ $(document).ready(function() {
     event.preventDefault();
     const inputNum  = parseInt($("#input").val());
     let result = speakArray(inputNum).toString;
-    $("#output").text(result);
-    $("#output").show() 
+    $("#result").text(result);
+    $("#result").show() 
 
   });
 });
